@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="_A_B">
+        <meta name="keywords" content="number,guess,game,_A_B,numbers,puzzle">
+        <meta name="author" content="Alvin Lin">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>_A_B</title>
+        <link rel="stylesheet" href="_a_b.css">
+        <link rel="icon" type="image/x-icon" href="AB_C.png">
+    </head>
+    <body>
+        <div id="titlecenter">
+            <h1 id="hint">_A_B</h1>
+            <h5 id="again">A Number Game</h5>
+        </div>
+        <div class="tilecontainer">
+            <div id="otherstuff"> 
+                <div id="pastguesses">
+                    <button id="enable">Enable Past Guesses</button>
+                    <div id="pastguesss">
+                        <h3>Past Guesses</h3>
+                        <ul id="pastguess">
+                            <li id="placeholder">(None yet)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="pastwins">
+                    <h3 id="wins">Past Wins: 0</h3>
+                    <ul id="winlist">
+
+                    </ul>
+                </div>
+            </div>
+            <div id="mainstuff">
+                <div class="tilecontainer" id="rowcenter">
+                    <div class="tile" id="tile0"></div>
+                    <div class="tile" id="tile1"></div>
+                    <div class="tile" id="tile2"></div>
+                    <div class="tile" id="tile3"></div>
+                </div>
+                <h2 id="tries">0</h2>
+                <br>
+                <h1 id="victory">
+                    You have guessed the correct number!
+                    <br><br>
+                    The number was <span id="victor">0000</span>!
+                </h1>
+                <br>
+                <br>
+            </div>
+        </div>
+        <p id="gamerule">Your goal is to guess a valid 4-digit number that is randomly generated. <br>
+            A valid 4-digit number is one that does not have repeating digits. <br>
+            For example, "3476" and "0291" is valid while "7550" is not. <br>
+            Every time you guess a valid 4-digit number, you will be hinted with the number of correct digits you guessed; <br>
+            For every digit that exists within the answer and is located at the same spot, you get 1 A. <br>
+            For every digit that exists within the answer but is not located at the same spot, you get 1 B. <br>
+            For example, if the answer were to be "1234", guessing "2574" will hint you with "1A1B"; guessing 9705 will hint you with "0A0B". <br>
+            Your goal is to use the hints given to you every time you guess a valid 4-digit number to infer and guess the answer. <br>
+            If you do so, you will see a "4A0B". This means that you have correctly guessed the randomly generated number. <br>
+            You can continue on guessing, and your results will be shown on the left every time you sucessfully guessed an answer. <br>
+            Have fun!
+        </p>
+        <div id="rules">
+            <button id="hidegamerule">Rules</button>
+        </div>
+        <script src="_a_b.js"></script>
+    </body>
+</html>
