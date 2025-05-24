@@ -220,7 +220,7 @@ function showgamerule(e){
     e.target.blur();
 }
 function setheight(list){
-    list.style.height = "50vh";
+    list.style.height = "40vh";
 }
 function setborder(list){
     list.style.borderBottom = "4px solid rgb(128,128,128)";
